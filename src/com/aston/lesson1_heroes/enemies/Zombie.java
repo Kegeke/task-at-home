@@ -11,9 +11,9 @@ public class Zombie extends Enemy implements Rise {
     }
 
     @Override
-    public void isRise() {
-        if(getHealth() <= 0) {
-            if(countRise > 0) {
+    public void rise() {
+        if (getHealth() <= 0) {
+            if (countRise > 0) {
                 System.out.printf("%s воскрес! + 10хп\n", NAME_ENEMY);
                 setHealth(10);
                 countRise--;
@@ -24,6 +24,6 @@ public class Zombie extends Enemy implements Rise {
     @Override
     public void takeDamage(int damage) {
         super.takeDamage(damage);
-        isRise();
+        rise();
     }
 }
