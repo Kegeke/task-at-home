@@ -20,6 +20,7 @@ public class Main {
         System.out.println("Пустой ли список: " + singleLinkedList.isEmpty());
         System.out.println("Удаление элемента 44: " + singleLinkedList.remove(44));
         System.out.println("Добавление элемента 44: " + singleLinkedList.add(44));
+        System.out.println("Есть ли элемент 12?: " + singleLinkedList.contains(12));
         System.out.println("Размер коллекции: " + singleLinkedList.size());
         System.out.println("Последниий элемент коллекции: " + singleLinkedList.get());
         System.out.println("Добавление элементов: " + singleLinkedList.addAll(List.of(12, 34, 56)));

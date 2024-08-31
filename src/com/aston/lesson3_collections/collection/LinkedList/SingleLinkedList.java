@@ -1,13 +1,12 @@
 package com.aston.lesson3_collections.collection.LinkedList;
 
-import com.aston.lesson3_collections.collection.Collections;
+import com.aston.lesson3_collections.collection.Collection;
 
-import java.util.Collection;
 import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class SingleLinkedList<E> implements Collections<E> {
+public class SingleLinkedList<E> implements Collection<E> {
     private Node<E> head;
     private int size;
 
@@ -34,14 +33,22 @@ public class SingleLinkedList<E> implements Collections<E> {
 
     @Override
     public E get() {
-        return head.value;
+        if (head != null) {
+            return head.value;
+        }
+
+        throw new RuntimeException("Список пустой.");
     }
 
     @Override
-    public boolean remove(Object o) {
+    public boolean remove(E e) {
+        if (head == null) {
+            throw new RuntimeException("Список пустой.");
+        }
+
         Node<E> temp = head;
 
-        if (Objects.equals(o, head.value)) {
+        if (Objects.equals(e, head.value)) {
             head = head.next;
             size--;
 
@@ -49,7 +56,7 @@ public class SingleLinkedList<E> implements Collections<E> {
         }
 
         while (temp.next != null) {
-            if (Objects.equals(o, temp.next.value)) {
+            if (Objects.equals(e, temp.next.value)) {
                 temp.next = temp.next.next;
                 size--;
 
@@ -63,7 +70,7 @@ public class SingleLinkedList<E> implements Collections<E> {
     }
 
     @Override
-    public boolean addAll(Collection<? extends E> c) {
+    public boolean addAll(java.util.Collection<? extends E> c) {
         for (E e : c) {
             add(e);
         }
@@ -82,6 +89,20 @@ public class SingleLinkedList<E> implements Collections<E> {
     public void clear() {
         head = null;
         size = 0;
+    }
+
+    public boolean contains(E e) {
+        Node<E> temp = head;
+
+        while (temp != null) {
+            if (Objects.equals(temp.value, e)) {
+                return true;
+            }
+
+            temp = temp.next;
+        }
+
+        return false;
     }
 
     /*
