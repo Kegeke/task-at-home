@@ -1,6 +1,6 @@
-package com.aston.lesson1_heroes.enemies;
+package com.aston.homework1_heroes.enemies;
 
-import com.aston.lesson1_heroes.specialty.Mortal;
+import com.aston.homework1_heroes.specialty.Mortal;
 
 public abstract class Enemy implements Mortal {
     private int health;

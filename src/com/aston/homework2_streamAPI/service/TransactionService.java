@@ -1,7 +1,7 @@
-package com.aston.lesson2_streamAPI.service;
+package com.aston.homework2_streamAPI.service;
 
-import com.aston.lesson2_streamAPI.Trader;
-import com.aston.lesson2_streamAPI.Transaction;
+import com.aston.homework2_streamAPI.Trader;
+import com.aston.homework2_streamAPI.Transaction;
 
 import java.util.Comparator;
 import java.util.List;

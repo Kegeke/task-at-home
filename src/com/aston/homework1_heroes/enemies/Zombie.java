@@ -1,6 +1,6 @@
-package com.aston.lesson1_heroes.enemies;
+package com.aston.homework1_heroes.enemies;
 
-import com.aston.lesson1_heroes.specialty.Rise;
+import com.aston.homework1_heroes.specialty.Rise;
 
 public class Zombie extends Enemy implements Rise {
     private static final String NAME_ENEMY = "Zombie";

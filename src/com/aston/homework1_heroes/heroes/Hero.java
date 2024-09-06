@@ -1,6 +1,6 @@
-package com.aston.lesson1_heroes.heroes;
+package com.aston.homework1_heroes.heroes;
 
-import com.aston.lesson1_heroes.enemies.Enemy;
+import com.aston.homework1_heroes.enemies.Enemy;
 
 public abstract class Hero {
     private final String name;

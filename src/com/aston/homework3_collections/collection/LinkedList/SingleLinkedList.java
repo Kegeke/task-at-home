@@ -1,6 +1,6 @@
-package com.aston.lesson3_collections.collection.LinkedList;
+package com.aston.homework3_collections.collection.LinkedList;
 
-import com.aston.lesson3_collections.collection.Collection;
+import com.aston.homework3_collections.collection.Collection;
 
 import java.util.Objects;
 import java.util.stream.Collectors;

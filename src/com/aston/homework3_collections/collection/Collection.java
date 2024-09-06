@@ -1,4 +1,4 @@
-package com.aston.lesson3_collections.collection;
+package com.aston.homework3_collections.collection;
 
 public interface Collection<E> {
     boolean add(E e);

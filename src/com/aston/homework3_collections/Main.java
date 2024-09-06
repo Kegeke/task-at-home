@@ -1,7 +1,7 @@
-package com.aston.lesson3_collections;
+package com.aston.homework3_collections;
 
 
-import com.aston.lesson3_collections.collection.LinkedList.SingleLinkedList;
+import com.aston.homework3_collections.collection.LinkedList.SingleLinkedList;
 
 import java.util.List;
 
@@ -27,5 +27,8 @@ public class Main {
         System.out.println(singleLinkedList);
 
         singleLinkedList.clear();
+
+        singleLinkedList.get();
+        singleLinkedList.add(23);
     }
 }

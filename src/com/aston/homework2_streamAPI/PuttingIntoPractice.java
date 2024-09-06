@@ -1,6 +1,6 @@
-package com.aston.lesson2_streamAPI;
+package com.aston.homework2_streamAPI;
 
-import com.aston.lesson2_streamAPI.service.TransactionService;
+import com.aston.homework2_streamAPI.service.TransactionService;
 
 import java.util.*;
 

@@ -1,7 +1,7 @@
-package com.aston.lesson1_heroes.heroes;
+package com.aston.homework1_heroes.heroes;
 
-import com.aston.lesson1_heroes.enemies.Enemy;
-import com.aston.lesson1_heroes.specialty.Mortal;
+import com.aston.homework1_heroes.enemies.Enemy;
+import com.aston.homework1_heroes.specialty.Mortal;
 
 public class Mage extends Hero implements Mortal {
     private static final int DAMAGE = 2;

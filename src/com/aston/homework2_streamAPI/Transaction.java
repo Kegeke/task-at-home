@@ -1,4 +1,4 @@
-package com.aston.lesson2_streamAPI;
+package com.aston.homework2_streamAPI;
 
 import java.util.Objects;
 

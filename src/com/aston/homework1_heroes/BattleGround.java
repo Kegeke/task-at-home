@@ -1,9 +1,9 @@
-package com.aston.lesson1_heroes;
+package com.aston.homework1_heroes;
 
-import com.aston.lesson1_heroes.enemies.Zombie;
-import com.aston.lesson1_heroes.heroes.Archer;
-import com.aston.lesson1_heroes.heroes.Mage;
-import com.aston.lesson1_heroes.heroes.Warrior;
+import com.aston.homework1_heroes.enemies.Zombie;
+import com.aston.homework1_heroes.heroes.Archer;
+import com.aston.homework1_heroes.heroes.Mage;
+import com.aston.homework1_heroes.heroes.Warrior;
 
 public class BattleGround {
     public static void main(String[] args) {
